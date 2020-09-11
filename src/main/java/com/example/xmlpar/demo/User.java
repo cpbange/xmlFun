@@ -9,6 +9,14 @@ public class User {
     private String gender;
     private Integer userId;
 
+    public User() {
+        this.firstName="";
+        this.lastName="";
+        this.age = 0;
+        this.gender="";
+        this.userId = (int)Math.random();
+    }
+
     public User(String firstName, String lastName, Integer age, String gender, Integer userId) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -17,20 +25,20 @@ public class User {
         this.userId = userId;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public String getFirstName() {
         return firstName;
     }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public Integer getAge() {
